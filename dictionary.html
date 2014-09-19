@@ -1,0 +1,13 @@
+<html>
+<script src="dictionary.js"></script>
+<script language="javascript">
+	startDict = function() {
+		dict = new Dictionary();
+		document.write(dict);
+		dict.add_key_value_pair("hello", 0);
+		document.write(dict);
+		document.write(dict.get_value("hello"));
+		dict.remove_key("hello");
+	}
+	window.addEventListener('onload', startDict)
+</script>
